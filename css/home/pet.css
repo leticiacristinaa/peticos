@@ -18,6 +18,10 @@
   padding: 60px 60px 60px 0px;
 }
 
+.pet-content img{
+  border-radius: 5px;
+}
+
 .pet-content p{
   color: #403186;
 }

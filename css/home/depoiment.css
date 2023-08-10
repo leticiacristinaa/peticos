@@ -31,7 +31,7 @@
 
 .depoiment-content p::before,
 .depoiment-content p::after {
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--color-p4);
   position: absolute;
 }
@@ -42,17 +42,29 @@
   object-fit: cover;
 }
 
-@media(max-width:800px){
-  .depoiment{
-    box-shadow: none;
-    grid-template-columns: 1fr;
+@media (max-width: 1200px) {
+  .depoiment-content p::before,
+  .depoiment-content p::after {
+    font-size: 2.5rem;
+    /* position: initial; */
   }
-  .depoiment-content{
-    padding: 80px 40px 20px 40px;
-    text-align: center;
+
+  .depoiment img {
+    object-fit: contain;
   }
   .depoiment-content p {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .depoiment {
+    box-shadow: none;
+    grid-template-columns: 1fr;
+  }
+  .depoiment-content {
+    padding: 80px 40px 20px 40px;
+    text-align: center;
   }
   .depoiment img {
     grid-row: 1;
