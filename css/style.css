@@ -1,0 +1,19 @@
+/* Global */
+@import url("./global/global.css");
+@import url("./global/header.css");
+@import url("./global/footer.css");
+
+/* Home */
+@import url("./home/intro.css");
+@import url("./home/services.css");
+@import url("./home/pet.css");
+@import url("./home/depoiment.css");
+
+/* Planos */
+@import url("./planos/planos.css");
+
+/* Utilities */
+@import url("./utilities/tipo.css");
+@import url("./utilities/color.css");
+@import url("./utilities/components.css");
+@import url("./utilities/form.css");
