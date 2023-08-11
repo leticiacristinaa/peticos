@@ -9,6 +9,9 @@
 @import url("./home/pet.css");
 @import url("./home/depoiment.css");
 
+/* Services */
+@import url("./services/bath.css");
+
 /* Planos */
 @import url("./planos/planos.css");
 

@@ -29,3 +29,18 @@
 .btn-light:hover{
   background-color: var(--color-p2);
 }
+
+/* Title header */
+
+.title-bg{
+  background-color: var(--color-p5);
+}
+.title {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.title h1,
+.title span {
+  margin-bottom: 20px;
+}
