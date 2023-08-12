@@ -20,6 +20,9 @@
 @import url("./planos/differential.css");
 @import url("./planos/questions.css");
 
+/* Contact */
+@import url("./contact/contact.css");
+
 /* Utilities */
 @import url("./utilities/tipo.css");
 @import url("./utilities/color.css");
