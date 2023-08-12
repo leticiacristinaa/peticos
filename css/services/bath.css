@@ -49,13 +49,18 @@
 @media(max-width:800px){
   .bath{
     grid-template-columns: 1fr;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .bath-content{
     box-shadow: none;
+    padding: 40px 40px 40px 60px;
     border-radius: 0px 0px 5px 5px;
   }
+}
 
-  .bath-img{
-
+@media(max-width:600px){
+  .bath-content{
+    padding: 40px 20px 40px 40px;
   }
 }

@@ -11,6 +11,9 @@
 
 /* Services */
 @import url("./services/bath.css");
+@import url("./services/bath-steps.css");
+@import url("./services/bath-info.css");
+
 
 /* Planos */
 @import url("./planos/planos.css");

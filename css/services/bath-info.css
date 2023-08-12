@@ -1,0 +1,39 @@
+.bath-info{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
+  padding-bottom: 120px;
+}
+
+.bath-info h1{
+  margin-bottom: 24px;
+}
+
+.bath-info-img img {
+  object-fit: cover;
+}
+
+.bath-info li{
+  display: flex;
+  gap: 8px;
+}
+
+.bath-info li + li{
+  margin-top: 16px;
+}
+
+.bath-info li img{
+  width: 24px;
+}
+
+@media(max-width:800px){
+  .bath-info{
+    grid-template-columns: 1fr;
+    padding-bottom: 60px;
+  }
+  .bath-info-img img {
+    width: 800px;
+    height: 280px;
+  }
+}

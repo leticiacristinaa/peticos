@@ -22,6 +22,25 @@
   color: var(--color-0);
 }
 
+.btn.arrow{
+    display: flex;
+    align-items: center;
+  }
+
+  .btn.arrow::after{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    margin-left: 8px;
+    background: url("../../img/icons/arrow-btn.svg") no-repeat;
+    transition: 0.2s;
+  }
+
+  .btn.arrow:hover::after{
+    transform: translateX(4px);
+  }
+
 .btn-light{
   background-color: var(--color-p3);
 }
