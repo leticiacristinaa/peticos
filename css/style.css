@@ -17,6 +17,8 @@
 
 /* Planos */
 @import url("./planos/planos.css");
+@import url("./planos/differential.css");
+@import url("./planos/questions.css");
 
 /* Utilities */
 @import url("./utilities/tipo.css");

@@ -64,6 +64,7 @@
     grid-template-columns: 1fr;
     gap: 10px 20px;
     padding-top: 80px;
+    padding-bottom: 60px;
   }
   .plano-item{
     margin-top: 20px;

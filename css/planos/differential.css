@@ -1,0 +1,61 @@
+.differential-bg{
+  background-color: var(--color-p6);
+}
+
+.differential{
+  padding: 120px 0px;
+}
+
+.differential h1{
+  margin-bottom: 80px;
+}
+
+.differential ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.differential li{
+  background-color: var(--color-1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.differential li img{
+  width: 32px;
+}
+
+.differential li img,
+.differential h2{
+  margin-bottom: 8px;
+}
+
+@media(max-width:1200px){
+  .differential ul{
+    gap: 20px;
+  }
+}
+
+@media(max-width:800px){
+  .differential{
+    padding: 80px 0px;
+  }
+  .differential h1{
+    margin-bottom: 40px;
+  }
+}
+
+@media(max-width:700px){
+  .differential ul{
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}
+
+@media(max-width:500px){
+  .differential ul{
+    grid-template-columns: 1fr;
+
+  }
+}

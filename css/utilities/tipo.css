@@ -64,7 +64,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px){
   .font-1-xxl {
     font-size: 2rem;
   }
@@ -72,4 +72,17 @@
   .font-2-xl {
     font-size: 1.5rem;
   }
+  .font-1-l{
+    font-size: 1.125rem;
+  }
+  .font-2-m{
+    font-size: 1rem;
+  }
 }
+
+@media(max-width:600px){
+  .font-1-m-b {
+    font-size: 1rem
+  }
+}
+
