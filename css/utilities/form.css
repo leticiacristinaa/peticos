@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   background-color: var(--color-p6);
+  border-radius: 5px;
   padding: 60px;
 }
 
@@ -15,11 +16,30 @@
   color: var(--color-s3);
 }
 
-.form input {
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"]{
   width: 100%;
   padding: 12px;
   border-radius: 5px;
   box-sizing: border-box;
   border: 1px solid var(--color-p5);
   background:  rgba(247, 247, 247, 0.97);
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+.input-radio{
+  background-color: #E8E4FD;
+  padding: 12px 16px;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .form .col-2 {
+    grid-column: 1;
+  }
 }
