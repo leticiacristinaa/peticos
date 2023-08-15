@@ -8,6 +8,10 @@
   padding-bottom: 120px;
 }
 
+#contact-plan .contact-img{
+  padding-top: 120px;
+}
+
 @media (max-width: 1200px) {
   .contact{
   grid-template-columns: 1fr;
