@@ -22,6 +22,7 @@
 
 /* Contact */
 @import url("./contact/contact.css");
+@import url("./contact/store.css");
 
 /* Utilities */
 @import url("./utilities/tipo.css");
