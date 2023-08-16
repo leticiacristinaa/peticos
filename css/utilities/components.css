@@ -1,4 +1,4 @@
-.container{
+.container {
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -6,62 +6,104 @@
   padding-right: 20px;
 }
 
-.btn{
+.btn {
   display: inline-block;
   padding: 16px 32px;
   max-width: max-content;
   border-radius: 4px;
   text-transform: uppercase;
-  font: 600 1.125rem/1.5 "Poppins" , sans-serif;
+  font: 600 1.125rem/1.5 "Poppins", sans-serif;
   background-color: var(--color-p1);
   color: var(--color-0);
   border: none;
   cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: var(--color-s2);
   color: var(--color-0);
 }
 
-.btn.arrow{
-    display: flex;
-    align-items: center;
-  }
+.btn.arrow {
+  display: flex;
+  align-items: center;
+}
 
-  .btn.arrow::after{
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 12px;
-    margin-left: 8px;
-    background: url("../../img/icons/arrow-btn.svg") no-repeat;
-    transition: 0.2s;
-  }
+.btn.arrow::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-left: 8px;
+  background: url("../../img/icons/arrow-btn.svg") no-repeat;
+  transition: 0.2s;
+}
 
-  .btn.arrow:hover::after{
-    transform: translateX(4px);
-  }
+.btn.arrow:hover::after {
+  transform: translateX(4px);
+}
 
-.btn-light{
+.btn-light {
   background-color: var(--color-p3);
 }
 
-.btn-light:hover{
+.btn-light:hover {
   background-color: var(--color-p2);
 }
 
 /* Title header */
 
-.title-bg{
+.title-bg {
   background-color: var(--color-p5);
-}
-.title {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+#services .title-bg,
+#plan .title-bg{
+  position: relative;
+  padding-bottom: 300px;
+}
+
+#services .title-bg{
+  box-shadow: inset 0 -210px var(--color-0);
+}
+
+#plan .title-bg {
+  box-shadow: inset 0 -180px var(--color-0);
+}
+
+#services .title-bg::after,
+#plan .title-bg::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../../img/dec/dec-bottom-p5.svg") no-repeat right;
+  position: absolute;
+  top: 0px;
 }
 
 .title h1,
 .title span {
   margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  #services .title-bg,
+  #plan .title-bg {
+    padding-bottom: 60px;
+    box-shadow: none;
+  }
+  #services .title-bg::after,
+  #plan .title-bg::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px){
+  #services .title-bg,
+  #plan .title-bg {
+    padding-bottom: 40px;
+  }
 }

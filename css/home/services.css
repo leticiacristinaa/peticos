@@ -1,51 +1,53 @@
-.services{
+.services {
   padding-top: 120px;
   padding-bottom: 120px;
+  position: relative;
+  background: url("../../img/dec/dec-patas-light.svg") no-repeat;
 }
 
-.services h1{
+.services h1 {
   margin-bottom: 40px;
 }
 
-.services-item{
+.services-item {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 
-.services-item li{
+.services-item li {
   padding: 40px;
   background-color: var(--color-p6);
   border-radius: 4px;
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.services-item img{
+.services-item img {
   margin-bottom: 12px;
 }
 
-.services-item  h2{
+.services-item h2 {
   margin-bottom: 8px;
 }
 
-@media(max-width:1200px){
-  .services-item{
+@media (max-width: 1200px) {
+  .services-item {
     gap: 20px;
   }
 }
 
-@media(max-width:800px){
-  .services{
+@media (max-width: 800px) {
+  .services {
     padding-top: 60px;
-    padding-bottom:60px;
-  }    
-  .services-item li{
+    padding-bottom: 60px;
+  }
+  .services-item li {
     padding: 20px;
   }
 }
 
-@media(max-width:600px){
-  .services-item{
+@media (max-width: 600px) {
+  .services-item {
     grid-template-columns: 1fr;
   }
 }

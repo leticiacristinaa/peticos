@@ -1,9 +1,13 @@
+#home .planos{
+  padding-top: 120px;
+}
+
 .planos {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px 40px;
   align-items: center;
-  padding-top: 120px;
+  padding-top: 20px;
   padding-bottom: 120px;
 }
 
@@ -12,13 +16,16 @@
   grid-column: 1/-1;
 }
 
+#home .plano-item{
+  margin-top: 60px;
+}
+
 .plano-item{
   display: grid;
   grid-template-columns: 1fr auto;
   align-content: start;
   padding: 32px 32px 32px 60px;
   border-radius: 4px;
-  margin-top: 60px;
 }
 
 .plano-item h3{
@@ -68,6 +75,15 @@
   }
   .plano-item{
     margin-top: 20px;
+  }
+}
+
+@media(max-width:600px){
+  .planos{
+    padding-top: 40px;
+  }
+  .plano-item{
+    margin-top: 0px;
   }
 }
 
