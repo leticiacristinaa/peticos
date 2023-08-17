@@ -48,6 +48,7 @@
   .intro{
     grid-template-columns: 1fr;
     padding-top: 40px;
+    padding-bottom: 60px;
   }
   .intro img{
     display: none;
@@ -57,3 +58,4 @@
     margin-bottom: 16px;
   }
 }
+

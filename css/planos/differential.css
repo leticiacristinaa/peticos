@@ -47,6 +47,9 @@
 }
 
 @media(max-width:700px){
+  .differential{
+    padding: 60px 0px;
+  }
   .differential ul{
     grid-template-columns: repeat(2, 1fr);
 
@@ -56,6 +59,5 @@
 @media(max-width:500px){
   .differential ul{
     grid-template-columns: 1fr;
-
   }
 }

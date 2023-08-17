@@ -67,23 +67,31 @@
 }
 
 @media(max-width:800px){
+  #home .planos{
+    padding-top: 80px;
+  }
   .planos{
     grid-template-columns: 1fr;
-    gap: 10px 20px;
+    gap: 10px;
     padding-top: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
   }
+  #home .plano-item,
   .plano-item{
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
 
 @media(max-width:600px){
-  .planos{
-    padding-top: 40px;
+  #home .planos{
+    padding-top: 60px;
   }
+  .planos{
+    padding-top: 20px;
+  }
+  #home .plano-item,
   .plano-item{
-    margin-top: 0px;
+    margin-top: 20px;
   }
 }
 

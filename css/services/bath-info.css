@@ -32,6 +32,9 @@
     grid-template-columns: 1fr;
     padding-bottom: 60px;
   }
+  .bath-info p{
+    font-size: 1rem;
+  }
   .bath-info-img img {
     width: 800px;
     height: 280px;
