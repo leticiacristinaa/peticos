@@ -24,6 +24,11 @@
   margin-bottom: 16px;
 }
 
+.questions dd{
+  max-width: 80ch;
+  margin-left: 20px;
+}
+
 .questions dt::before{
   content: "";
   display: inline-block;
@@ -33,22 +38,39 @@
   background: var(--color-p3);
 }
 
-.questions dt::after{
+/* JavaScript - Accordion list */
+
+.js-accordion dt::after{
   content: "";
   display: inline-block;
   width: 20px;
   height: 16px;
   background: url("../../img/icons/arrow-up.svg") no-repeat;
-  transition: 0.3s;
+  transition: .3s;
 }
 
-.questions dt:hover::after{
+.js-accordion dt.active::after{
   transform: rotate(180deg);
 }
 
-.questions dd{
-  max-width: 80ch;
-  margin-left: 20px;
+.js-accordion dd{
+  display: none;
+}
+
+.js-accordion dd.active{
+  display: block;
+  animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown{
+  from{
+    opacity: 0;
+    max-height: 0;
+  }
+  to{
+    opacity: 1;
+    max-height: 200px;
+  }
 }
 
 @media(max-width:800px){
@@ -59,8 +81,4 @@
   .questions h1{
     margin-bottom: 40px;
   }
-}
-
-@media(max-width:600px){
-
 }
