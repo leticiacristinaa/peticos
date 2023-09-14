@@ -15,6 +15,8 @@ function initAccordion() {
   });
 }
 
+initAccordion()
+
 function initAnimaScroll() {
   const sections = document.querySelectorAll(".js-scroll");
 
