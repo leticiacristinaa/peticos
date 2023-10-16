@@ -2,20 +2,22 @@ function initAccordion() {
   const accordionList = document.querySelectorAll(".js-accordion dt");
   const classActive = "active";
 
-  accordionList[0].classList.toggle(classActive);
-  accordionList[0].nextElementSibling.classList.toggle(classActive);
+  if (accordionList.length) {
+    accordionList[0].classList.add(classActive);
+    accordionList[0].nextElementSibling.classList.add(classActive);
 
-  function activeAccordion() {
-    this.classList.toggle(classActive);
-    this.nextElementSibling.classList.toggle(classActive);
+    function activeAccordion() {
+      this.classList.toggle(classActive);
+      this.nextElementSibling.classList.toggle(classActive);
+    }
+
+    accordionList.forEach((item) => {
+      item.addEventListener("click", activeAccordion);
+    });
   }
-
-  accordionList.forEach((item) => {
-    item.addEventListener("click", activeAccordion);
-  });
 }
 
-initAccordion()
+initAccordion();
 
 function initAnimaScroll() {
   const sections = document.querySelectorAll(".js-scroll");
@@ -27,7 +29,7 @@ function initAnimaScroll() {
       const sectionTop = section.getBoundingClientRect().top;
       const sectionVisible = sectionTop - windowHalf < 0;
       if (sectionVisible) {
-        section.classList.add('active');
+        section.classList.add("active");
       }
     });
   }
