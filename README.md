@@ -36,7 +36,7 @@ O objetivo deste projeto foi praticar:
 
 ## 🔗 Projeto online
 
-[Visualizar projeto]([https://seu-link-aqui.com](https://leticiacristinaa.github.io/peticos/))
+[Visualizar projeto](https://leticiacristinaa.github.io/peticos/)
 
 ## 📚 Aprendizados
 
